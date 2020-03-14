@@ -1,0 +1,33 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
+      with:
+        nuget-version: latest 
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Build
+      run: dotnet build .NLog.Targets.NewRelicLab.Logs/NLog.Targets.NewRelicLab.Logs.csproj --configuration Release
+    - name: Pack
+      run: dotnet pack ./NLog.Targets.NewRelicLab.Logs/NLog.Targets.NewRelicLab.Logs.csproj  --output ./artifacts --configuration Release
+    - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@b16da9a
+      with:
+        nupkg-path:  './artifacts/*.nupkg'
+        repo-owner:  'tanaka-takayoshi'
+        gh-user:  'tanaka-takayoshi'
+        token:  ${{ secrets.GITHUB_TOKEN }}
