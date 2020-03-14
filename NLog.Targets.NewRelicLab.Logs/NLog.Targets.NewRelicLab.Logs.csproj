@@ -10,6 +10,8 @@
     <Description>Send logs to New Relic Logs.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageTags>nlog;newrelic</PackageTags>
+    <PackageProjectUrl />
+    <RepositoryUrl>https://github.com/tanaka-takayoshi/NLog.Targets.NewRelicLab</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
