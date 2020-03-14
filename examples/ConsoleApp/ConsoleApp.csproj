@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NLog.Targets.NewRelicLab.Logs\NLog.Targets.NewRelicLab.Logs.csproj" />
+    <PackageReference Include="NLog.Targets.NewRelicLab.Logs" Version="0.1.0-alpha" />
   </ItemGroup>
 
 </Project>
