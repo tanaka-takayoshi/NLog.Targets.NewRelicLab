@@ -25,7 +25,7 @@ jobs:
       run: dotnet build ./NLog.Targets.NewRelicLab.Logs/NLog.Targets.NewRelicLab.Logs.csproj --configuration Release
     - name: Pack
       run: dotnet pack ./NLog.Targets.NewRelicLab.Logs/NLog.Targets.NewRelicLab.Logs.csproj  --output ./artifacts --configuration Release
-    - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.0
+    - uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@7dc6b71
       with:
         nupkg-path:  './artifacts/*.nupkg'
         repo-owner:  'tanaka-takayoshi'
