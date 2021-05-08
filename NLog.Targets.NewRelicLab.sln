@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.Targets.NewRelicLab.Logs", "NLog.Targets.NewRelicLab.Logs\NLog.Targets.NewRelicLab.Logs.csproj", "{CB9509C9-7530-43D5-B2DC-13DD96F4A107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "examples\ConsoleApp\ConsoleApp.csproj", "{FA87523B-429F-4445-945E-A253CE72A7EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "examples\ConsoleApp\ConsoleApp.csproj", "{FA87523B-429F-4445-945E-A253CE72A7EE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{6B9E20F4-1BC9-43E7-9375-B02843A20514}"
 EndProject
