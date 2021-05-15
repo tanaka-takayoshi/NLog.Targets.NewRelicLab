@@ -91,7 +91,7 @@ Note: This is an unofficial package. Since this is an experimental library, plea
 
 ## Release Notes
 
-### 0.2.1 (secirity fix)
+### 0.2.1 (security fix)
 
 - Bumps System.Text.Encodings.Web from 5.0.0 to 5.0.1.
 
